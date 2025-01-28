@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradient-rotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+:root {
+  --foreground: #ffffff;
+}
+
+html,
+body {
+  color: var(--foreground);
+  background: linear-gradient(135deg, #b85276 0%, #ee253d 50%, #b85276 100%);
+  background-size: 200% 200%;
+  animation: gradient-rotate 10s ease infinite;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
