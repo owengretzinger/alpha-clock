@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   title: "Alpha Clock | McMaster University",
   description:
     "A minimalist clock display for Alpha group discussions at McMaster University",
+  openGraph: {
+    title: "Alpha Clock | McMaster University",
+    description:
+      "A minimalist clock display for Alpha group discussions at McMaster University",
+    images: [{ url: "/alpha_pfp.JPG" }],
+  },
 };
 
 export default function RootLayout({
