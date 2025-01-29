@@ -22,21 +22,20 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen flex items-center justify-center relative">
+    <div className="min-h-screen flex items-center justify-center">
       <div className="flex flex-col items-center gap-4">
         <div className="text-8xl font-normal">{time}</div>
-        <div className="text-xl font-thin">@alpha.mcmaster</div>
-      </div>
-
-      <div className="absolute -bottom-8 -right-8">
-        <div className="w-96 h-96 relative">
-          <Image
-            src="/alpha_pfp_no_bg.png"
-            alt="Alpha logo"
-            fill
-            style={{ objectFit: "contain" }}
-            priority
-          />
+        <div className="flex flex-col items-center">
+          <div className="text-xl font-thin">@alpha.mcmaster</div>
+          <div className="w-16 h-16 relative">
+            <Image
+              src="/alpha_pfp_no_bg.png"
+              alt="Alpha logo"
+              fill
+              style={{ objectFit: "contain" }}
+              priority
+            />
+          </div>
         </div>
       </div>
     </div>
