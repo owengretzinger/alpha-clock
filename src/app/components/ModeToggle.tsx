@@ -1,10 +1,6 @@
 "use client";
 
-import {
-  commonButtonClasses,
-  timerButtonClasses,
-  fadeInOutClasses,
-} from "./styles";
+import { timerButtonClasses, fadeInOutClasses } from "./styles";
 
 interface ModeToggleProps {
   isTimerMode: boolean;
@@ -20,7 +16,7 @@ export function ModeToggle({
   return (
     <button
       onClick={onToggle}
-      className={`absolute top-4 right-4 ${commonButtonClasses} ${timerButtonClasses} w-40 ${fadeInOutClasses} ${
+      className={`absolute top-4 right-4 ${timerButtonClasses} w-40 rounded-lg py-2 ${fadeInOutClasses} ${
         showControls ? "opacity-100" : "opacity-0"
       }`}
     >

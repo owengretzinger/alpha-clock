@@ -23,7 +23,7 @@ export default function Home() {
         onToggle={toggleTimer}
       />
 
-      <div className="flex flex-col items-center gap-4">
+      <div className="flex flex-col items-center gap-4 pt-24">
         {isTimerMode ? <Timer showControls={showControls} /> : <Clock />}
         <Logo />
       </div>
