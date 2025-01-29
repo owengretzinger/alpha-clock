@@ -20,7 +20,7 @@ export function ModeToggle({
   return (
     <button
       onClick={onToggle}
-      className={`absolute top-4 right-4 ${commonButtonClasses} ${timerButtonClasses} w-fit px-4 ${fadeInOutClasses} ${
+      className={`absolute top-4 right-4 ${commonButtonClasses} ${timerButtonClasses} w-40 ${fadeInOutClasses} ${
         showControls ? "opacity-100" : "opacity-0"
       }`}
     >
