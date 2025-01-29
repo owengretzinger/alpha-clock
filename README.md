@@ -5,9 +5,24 @@
 A minimalist clock display designed for Alpha group discussions at McMaster University. This elegant, distraction-free clock helps us keep track of time during Alpha group discussions. The design features:
 
 - Clean, easy-to-read time display
+- Built-in timer functionality with preset durations
 - Subtle animated gradient background
 - Alpha McMaster branding
-- Distraction-free interface
+- Distraction-free interface with motion-sensitive controls
+
+## Features
+
+### Clock Mode
+
+- Large, clear 12-hour time display
+- Minimalist design that stays out of the way
+
+### Timer Mode
+
+- Quick access to 5, 10, and 15-minute presets
+- Fine-tune controls (+/- 30 seconds)
+- Play/pause functionality
+- Motion-sensitive controls that fade away when not in use
 
 ## About
 
@@ -26,7 +41,7 @@ npm install
 npm run dev
 ```
 
-Then open [http://localhost:3000](http://localhost:3000) in your browser. The clock will automatically update every minute.
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Development
 
@@ -34,4 +49,23 @@ This project is built with:
 
 - [Next.js](https://nextjs.org)
 - [Tailwind CSS](https://tailwindcss.com)
-- React
+- [React](https://reactjs.org)
+- [Heroicons](https://heroicons.com)
+
+### Project Structure
+
+```
+src/
+  app/
+    components/
+      Clock.tsx          # Clock display component
+      Timer.tsx          # Timer logic and display
+      TimerControls.tsx  # Timer control buttons
+      Logo.tsx           # Alpha branding
+      ModeToggle.tsx     # Mode switch button
+      styles.ts          # Shared styles
+      useMouseIdle.ts    # Mouse movement detection
+    page.tsx             # Main app page
+    layout.tsx           # Root layout
+    globals.css          # Global styles
+```
