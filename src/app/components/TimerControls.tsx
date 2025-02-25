@@ -24,7 +24,7 @@ export function TimerControls({
 }: TimerControlsProps) {
   return (
     <div
-      className={`absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 ${fadeInOutClasses} ${
+      className={`absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 ${fadeInOutClasses} ${
         showControls ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
       }`}
     >

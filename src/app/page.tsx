@@ -27,6 +27,15 @@ export default function Home() {
         {isTimerMode ? <Timer showControls={showControls} /> : <Clock />}
         <Logo />
       </div>
+
+      <a
+        href="https://owengretzinger.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute bottom-4 text-sm text-white/75 hover:text-white/90 transition-colors"
+      >
+        Designed & built by Owen Gretzinger
+      </a>
     </div>
   );
 }
